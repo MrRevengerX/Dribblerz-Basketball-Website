@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
+    <link rel="icon" href="src/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--/*!
+          * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+          * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+        */-->
+    <title>QUIZ</title>
+  </head>
+  <body>
+    <!-- PAGE EDITOR DETAILS -->
+    <section class="page-editor flex flex-center">
+      <div class="editor-exit"><i class="fas fa-times"></i></div>
+      <div class="page-editor-wrapper">
+        <div class="page-editor-image flex flex-center">
+          <img src="src/rayyan.jpg" alt="page editor img" />
+        </div>
+        <div class="page-editor-name">
+          <h1>Rayyan</h1>
+        </div>
+        <div class="page-editor-description">
+          <div class="student-details">
+            <p>IIT ID: 20210588</p>
+            <p>UOW ID: w1913316</p>
+            <p>Student-3</p>
+          </div>
+          <p>List of tasks completed</p>
+          <hr />
+          <p>Task-2a</p>
+          <p>Task-6</p>
+          <p>Task-8</p>
+          <p>Tasks-9b to 15</p>
+        </div>
+      </div>
+    </section>
+    <!-- BACK TO TOP BTN -->
+    <button class="btn back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- NAVIGATION SECTION -->
+    <header class="nav-bar">
+      <nav class="flex">
+        <img id="logo" src="src/Logo.png" alt="Main Logo" />
+        <ul>
+          <!-- All nav links not yet working cause other member files not available in individual submission -->
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Products</a></li>
+          <li><a class="active" href="quiz.html">Quiz</a></li>
+          <li><a href="feedback.html">Reach us</a></li>
+          <li><a href="thumbnail.html">Hall of fame</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- QUIZ SECTION -->
+    <section class="quiz-section flex flex-center flex-column">
+      <div class="flex flex-column flex-center quiz-rules" id="rule-box">
+        <div class="info-header">
+          <h2>Rules of the Quiz</h2>
+        </div>
+        <div class="info">
+          <p>1. The quiz consists of 10 questions</p>
+          <p>2. A total of 1 minute will be given to complete the quiz</p>
+          <p>
+            3. You will be awarded 2 marks for each correct answer and -1 mark
+            for each wrong answer
+          </p>
+          <p>4. The results will be shown after the quiz has been completed</p>
+        </div>
+        <button onclick="begin_quiz()" class="btn btn-startquiz">
+          START QUIZ
+        </button>
+      </div>
+
+      <form>
+        <div class="countdown" id="timer"></div>
+
+        <div class="question-sec" id="question-01">
+          <div class="question-header">
+            1. Which NBA team won the 2022 championship?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input type="radio" name="question1" value="Bucks" />Milwaukee
+              Bucks
+            </p>
+            <p>
+              <input type="radio" name="question1" value="Lakers" />LA Lakers
+            </p>
+            <p>
+              <input type="radio" name="question1" value="Warriors" />Golden
+              State Warriors
+            </p>
+            <p>
+              <input type="radio" name="question1" value="Celtics" />Boston
+              Celtics
+            </p>
+          </div>
+          <div onclick="q2()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-02">
+          <div class="question-header">
+            2. Who won the FMVP at the 2022 championship?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input type="radio" name="question2" value="Steph Curry" />Steph
+              Curry
+            </p>
+            <p>
+              <input type="radio" name="question2" value="Lebron James" />Lebron
+              James
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question2"
+                value="Giannis Antetokounmpo"
+              />Giannis Antetokounmpo
+            </p>
+            <p>
+              <input type="radio" name="question2" value="Nikola Jokic" />Nikola
+              Jokic
+            </p>
+          </div>
+          <div onclick="q3()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-03">
+          <div class="question-header">
+            3. Which player scored the most points in one game?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input
+                type="radio"
+                name="question3"
+                value="Michael Jordan"
+              />Michael Jordan
+            </p>
+            <p>
+              <input type="radio" name="question3" value="Lebron James" />Lebron
+              James
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question3"
+                value="Wilt Chamberlain"
+              />Wilt Chamberlain
+            </p>
+            <p>
+              <input type="radio" name="question3" value="Bill Russel" />Bill
+              Russel
+            </p>
+          </div>
+          <div onclick="q4()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-04">
+          <div class="question-header">
+            4. Who won the most career NBA championships as a player?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input
+                type="radio"
+                name="question4"
+                value="Michael Jordan"
+              />Michael Jordan
+            </p>
+            <p>
+              <input type="radio" name="question4" value="Kobe Bryant" />Kobe
+              Bryant
+            </p>
+            <p>
+              <input type="radio" name="question4" value="Bill Russel" />Bill
+              Russel
+            </p>
+            <p>
+              <input type="radio" name="question4" value="Steph Curry" />Steph
+              Curry
+            </p>
+          </div>
+          <div onclick="q5()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-05">
+          <div class="question-header">
+            5. Which NBA team won six championships in the 1990s?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input type="radio" name="question5" value="LA Lakers" />LA Lakers
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question5"
+                value="Chicago Bulls"
+              />Chicago Bulls
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question5"
+                value="Dallas Mavericks"
+              />Dallas Mavericks
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question5"
+                value="Phoenix Suns"
+              />Phoenix Suns
+            </p>
+          </div>
+          <div onclick="q6()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-06">
+          <div class="question-header">
+            6. Who is the youngest ever MVP of the league?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input
+                type="radio"
+                name="question6"
+                value="Shaquille O'Neal"
+              />Shaquille O'Neal
+            </p>
+            <p>
+              <input type="radio" name="question6" value="Jayson Tatum" />Jayson
+              Tatum
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question6"
+                value="Giannis Antetokounmpo"
+              />Giannis Antetokounmpo
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question6"
+                value="Derrick Rose"
+              />Derrick Rose
+            </p>
+          </div>
+          <div onclick="q7()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-07">
+          <div class="question-header">
+            7. How many teams play in the NBA league?
+          </div>
+          <div class="answers-list">
+            <p><input type="radio" name="question7" value="30" />30</p>
+            <p><input type="radio" name="question7" value="26" />26</p>
+            <p><input type="radio" name="question7" value="38" />38</p>
+            <p><input type="radio" name="question7" value="28" />28</p>
+          </div>
+          <div onclick="q8()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-08">
+          <div class="question-header">
+            8. Who won the first ever unanimous MVP award?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input
+                type="radio"
+                name="question8"
+                value="Damian Lillard"
+              />Damian Lillard
+            </p>
+            <p>
+              <input type="radio" name="question8" value="Dwyane Wade" />Dwyane
+              Wade
+            </p>
+            <p>
+              <input type="radio" name="question8" value="Kobe Bryant" />Kobe
+              Bryant
+            </p>
+            <p>
+              <input type="radio" name="question8" value="Steph Curry" />Steph
+              Curry
+            </p>
+          </div>
+          <div onclick="q9()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-09">
+          <div class="question-header">
+            9. Which team did Kobe Bryant play for in the NBA?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input
+                type="radio"
+                name="question9"
+                value="Atlanta Hawks"
+              />Atlanta Hawks
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question9"
+                value="Washington Wizards"
+              />Washington Wizards
+            </p>
+            <p>
+              <input type="radio" name="question9" value="Miami Heat" />Miami
+              Heat
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question9"
+                value="Los Angeles Lakers"
+              />Los Angeles Lakers
+            </p>
+          </div>
+          <div onclick="q10()" class="btn btn-next">
+            Next<i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="question-sec" id="question-10">
+          <div class="question-header">
+            10. Who holds the record for most 3-pointers in the NBA?
+          </div>
+          <div class="answers-list">
+            <p>
+              <input type="radio" name="question10" value="Steph Curry" />Steph
+              Curry
+            </p>
+            <p>
+              <input type="radio" name="question10" value="James Harden" />James
+              Harden
+            </p>
+            <p>
+              <input type="radio" name="question10" value="Ray Allen" />Ray
+              Allen
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="question10"
+                value="Reggie Miller"
+              />Reggie Miller
+            </p>
+          </div>
+          <div onclick="submitLast()" class="btn btn-endquiz">
+            Check results
+          </div>
+        </div>
+
+        <div class="results-sec" id="results">
+          <div class="results-header">Results of the Quiz</div>
+          <div class="results-list">
+            <p>
+              Time taken for the quiz &emsp; : &nbsp;
+              <span id="seconds"></span> Seconds
+            </p>
+            <br />
+            <p>Correct answers &emsp; : &nbsp; <span id="correct"></span>/10</p>
+            <br />
+            <p>
+              Incorrect / Unmarked answers &emsp; : &nbsp;
+              <span id="incorrect"></span>/10
+            </p>
+            <br />
+            <h3>Total score &emsp; : &nbsp; <span id="points"></span>/20</h3>
+          </div>
+          <div
+            onclick="window.location.href='Quiz.html'"
+            class="btn btn-endquiz"
+          >
+            Close
+          </div>
+        </div>
+      </form>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <img class="logo" src="src/Logo.png" alt="site logo" />
+          </div>
+          <div class="Link-lists">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="Link-lists">
+            <h4>More Links</h4>
+            <ul>
+              <li><a href="sitemap.html">Site map</a></li>
+              <li><a href="feedback.html">Reach us</a></li>
+              <li><a href="additional-page.html">IntotheHoop 2022</a></li>
+            </ul>
+          </div>
+          <div class="Link-lists">
+            <h4>Meet the crew</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright DRIBBLERZ 2022, All Rights Reserved.</p>
+        <p class="view-page-editor">
+          <a class="view-editor">View Page Editor</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/global-script.js"></script>
+    <!-- QUIZ PAGE SCRIPT -->
+    <script src="js/quizjs.js"></script>
+  </body>
+</html>

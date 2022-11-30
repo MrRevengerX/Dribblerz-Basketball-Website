@@ -1,0 +1,190 @@
+/* ---Tournament registration section---  */
+.tournament-details {
+  width: 650px;
+  text-align: center;
+}
+
+.tournament-details h1 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.tournament-details p {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.tournament-details img {
+  width: 350px;
+}
+
+.register-button {
+  margin-top: 20px;
+}
+
+.tournament-rules {
+  padding-top: 70px;
+}
+
+.tournament-rules h1 {
+  padding-bottom: 30px;
+}
+
+.tournament-rules h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.tournament-rules ul {
+  list-style: disc;
+}
+.tournament-rules li {
+  padding-bottom: 8px;
+}
+
+.tournament-registration-form fieldset {
+  padding: 0 40px;
+  text-align: center;
+  border-radius: 25px;
+  border-color: var(--orange);
+  backdrop-filter: blur(10px);
+}
+
+.tournament-registration-form legend {
+  font-size: 25px;
+  padding: 20px 10px;
+}
+
+.registration-field {
+  padding-bottom: 15px;
+}
+
+.registration-field input {
+  padding: 10px 20px;
+  width: 370px;
+}
+
+.registration-field:last-child {
+  padding-bottom: 30px;
+}
+
+.tournament-registration-form button {
+  margin-top: 15px;
+}
+.form-agree {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.warning-messages {
+  font-size: 15px;
+  margin-top: 8px;
+  color: red;
+  opacity: 0;
+}
+
+.rule-agree-warning {
+  display: block;
+  font-size: 13px;
+}
+
+/* ---Sponsors logo section--- */
+.sponsors {
+  height: 100vh;
+}
+
+.sponsors-logo img {
+  width: 200px;
+}
+
+.sponsors-logo {
+  margin: 10px;
+  padding: 10px;
+  filter: grayscale(1);
+  transition: filter 0.6s ease;
+}
+
+.sponsors-logo:hover {
+  filter: grayscale(0);
+}
+
+.sponsor-logos-wrapper {
+  width: 800px;
+  flex-wrap: wrap;
+}
+
+.sponsors h2 {
+  padding-bottom: 25px;
+  font-size: 55px;
+}
+
+/* ---Newsletter section---  */
+.newsletter-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.newsletter-content {
+  padding: 20px;
+  width: 500px;
+  height: 225px;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  box-shadow: 0 8px 32px 0 var(--black);
+}
+
+.newsletter-form h1 {
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+.newsletter-form div {
+  color: var(--p-color);
+  font-size: 15px;
+  padding-bottom: 25px;
+}
+.newsletter-form footer {
+  padding-bottom: 15px;
+}
+.newsletter-form footer input {
+  padding: 11px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.email-warning {
+  font-size: 13px;
+  padding-top: 5px;
+  color: red;
+  position: absolute;
+  left: 80px;
+  opacity: 0;
+}
+
+.newsletter-success {
+  display: none;
+}
+
+.success-msg {
+  color: rgb(7, 187, 7);
+  font-size: 23px;
+}
+
+.newsletter-success i {
+  color: rgb(7, 187, 7);
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+/* ---Page editor panel--- */
+
+.page-editor {
+  width: 98.7vw;
+  left: -2000px;
+}

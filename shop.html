@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/product-styles.css" />
+    <link rel="icon" href="src/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/shop.js" async></script>
+    <!--/*!
+          * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+          * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+        */-->
+    <title>SHOP</title>
+  </head>
+  <body>
+    <!-- PAGE EDITOR DETAILS -->
+    <section class="page-editor flex flex-center">
+      <div class="editor-exit"><i class="fas fa-times"></i></div>
+      <div class="page-editor-wrapper">
+        <div class="page-editor-image flex flex-center">
+          <img src="src/ravindu.jpg" alt="page editor img" />
+        </div>
+        <div class="page-editor-name">
+          <h1>Ravindu</h1>
+        </div>
+        <div class="page-editor-description">
+          <div class="student-details">
+            <p>IIT ID: 20210226</p>
+            <p>UOW ID: w1912861</p>
+            <p>Student-1</p>
+          </div>
+          <p>List of tasks completed</p>
+          <hr />
+          <p>Task-1</p>
+          <p>Task-2a</p>
+          <p>Task-4</p>
+          <p>Tasks-9b to 15</p>
+        </div>
+      </div>
+    </section>
+    <!-- BACK TO TOP BTN -->
+    <button class="btn back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- NAVIGATION SECTION -->
+    <header class="nav-bar">
+      <nav class="flex">
+        <img id="logo" src="src/Logo.png" alt="Main Logo" />
+        <ul>
+          <!-- All nav links not yet working cause other member files not available in individual submission -->
+          <li><a href="home.html">Home</a></li>
+          <li><a class="active" href="shop.html">Products</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="feedback.html">Reach us</a></li>
+          <li><a href="thumbnail.html">Hall of fame</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="product-page">
+      <h1 class="product-header">Shop</h1>
+      <div class="product-page-content flex flex-column flex-center">
+        <div class="product-form">
+          <form>
+            <div class="product-form-element">
+              <label for="customer-name">Name : </label>
+              <input type="text" id="customer-name" name="name" />
+            </div>
+            <div class="product-form-element">
+              <label for="customer-email">E-Mail : </label>
+              <input type="text" id="customer-email" name="email" />
+            </div>
+          </form>
+        </div>
+        <!-- PRODUCTS SECTION -->
+        <div class="products flex">
+          <div class="product cap">
+            <img
+              class="product-image"
+              src="src/driblerz-cap.png"
+              alt="DRIBBLERZ Cap Image"
+            />
+            <div class="product-details">
+              <span class="product-name">DRIBBLERZ Cap</span>
+              <span class="product-price">$5.99</span>
+              <div class="addtocart-wrapper">
+                <button class="btn btn-addtocart" type="button">
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product tshirt">
+            <img
+              class="product-image"
+              src="src/driblerz-tshirt.png"
+              alt=">DRIBBLERZ T-Shirt Image"
+            />
+
+            <div class="product-details">
+              <span class="product-name">DRIBBLERZ T-Shirt</span>
+              <span class="product-price">$14.99</span>
+              <div class="addtocart-wrapper">
+                <button class="btn btn-addtocart" type="button">
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product trouser">
+            <img
+              class="product-image"
+              src="src/driblerz-trousers.png"
+              alt="DRIBBLERZ Trousers Image"
+            />
+            <!-- https://eu.puma.com/lu/en/pd/melo-dime-mens-basketball-pants/535108.html -->
+            <div class="product-details">
+              <span class="product-name">DRIBBLERZ Trousers</span>
+              <span class="product-price">$19.99</span>
+              <div class="addtocart-wrapper">
+                <button class="btn btn-addtocart" type="button">
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product sneakers">
+            <img
+              class="product-image"
+              src="src/driblerz-sneakers.png"
+              alt="Air Jordan Shoes Image"
+            />
+            <!-- https://bouncewear.com/en-fr/products/cz2650-002-air-jordan-xxxvi-black-laser-orange-deadly-pink-black-laser-orange-deadly-pink -->
+            <div class="product-details">
+              <span class="product-name">Air Jordan Shoes</span>
+              <span class="product-price">$199.99</span>
+              <div class="addtocart-wrapper">
+                <button class="btn btn-addtocart" type="button">
+                  <i class="fas fa-shopping-cart"></i>Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUCT CART SECTION -->
+        <div class="cart invisible" id="cart">
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">
+            <i class="fas fa-shopping-cart"></i>Place Order
+          </button>
+        </div>
+      </div>
+      <!-- INVOICE SECTION -->
+      <div class="invoice-content flex flex-center flex-column invisible">
+        <div class="invoice-container">
+          <div class="customer-details">
+            <h6>Customer Details</h6>
+            <p class="customer-name-invoice"></p>
+            <p class="customer-email-invoice"></p>
+          </div>
+          <div class="invoice-details">
+            <h6>Invoice Details</h6>
+            <div class="invoice-rows"></div>
+            <div class="invoice-total"><strong>Total Bill : </strong> $100</div>
+          </div>
+        </div>
+        <button class="btn btn-edit">
+          <i class="fas fa-pen"></i>Change Order
+        </button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <img class="logo" src="src/Logo.png" alt="site logo" />
+          </div>
+          <div class="Link-lists">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="Link-lists">
+            <h4>More Links</h4>
+            <ul>
+              <li><a href="sitemap.html">Site map</a></li>
+              <li><a href="feedback.html">Reach us</a></li>
+              <li><a href="additional-page.html">IntotheHoop 2022</a></li>
+            </ul>
+          </div>
+          <div class="Link-lists">
+            <h4>Meet the crew</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright DRIBBLERZ 2022, All Rights Reserved.</p>
+        <p class="view-page-editor">
+          <a class="view-editor">View Page Editor</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/global-script.js"></script>
+  </body>
+</html>

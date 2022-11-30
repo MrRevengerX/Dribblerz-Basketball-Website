@@ -1,0 +1,99 @@
+/*Thumbnail page styles*/
+.players_thumbnail {
+  width: 100vw;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 14px;
+}
+.Details-section h4 {
+  font-size: 40px;
+  text-align: center;
+  margin-right: 550px;
+}
+.player h3 {
+  font-size: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.player img {
+  margin-top: 5px;
+  width: 100px;
+  height: 175px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+  cursor: alias;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 25px;
+  margin: 20px;
+  border: solid 2px var(--orange);
+}
+.Details-section img {
+  width: 270px;
+  height: 470px;
+  margin-left: 50px;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 25px;
+  margin: 20px;
+  object-fit: cover;
+}
+.para1 {
+  width: 100%;
+  padding-top: 20px;
+}
+.playerDescription {
+  font-size: 20px;
+  width: 90%;
+  text-align: center;
+}
+.Details-section {
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 25px;
+  border: solid 2px var(--orange);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 85%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 var(--black);
+}
+h5 {
+  font-size: 20px;
+}
+
+.custom-select {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.custom-select select {
+  display: block;
+  width: 250px;
+  min-height: 35px;
+  background: #444749;
+  border-radius: 3px;
+  border: 2px solid #50565a;
+  outline: none;
+  padding: 0 20px 0 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  appearance: none;
+}
+.selectBox1 {
+  padding-right: 30px;
+}
+.playerName {
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}

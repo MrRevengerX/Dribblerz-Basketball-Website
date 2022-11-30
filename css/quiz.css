@@ -1,0 +1,137 @@
+/*---QUIZ SECTION---*/
+.quiz-section {
+  margin: 0 0 0 auto;
+  min-height: 90vh;
+  padding: 0px 10px;
+  min-width: 100vw;
+}
+
+.quiz-rules {
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  height: 100%;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 20px;
+}
+
+.info {
+  padding-bottom: 30px;
+}
+
+.info-header h2 {
+  font-size: 55px;
+  padding-bottom: 30px;
+  text-shadow: 3px 2px 5px var(--orange);
+}
+
+.info p {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.btn-startquiz {
+  left: 50%;
+}
+
+.btn-next {
+  width: 100px;
+  float: right;
+}
+
+.fa-caret-right {
+  padding: 5px;
+}
+
+.countdown {
+  display: none;
+  color: #e05c09;
+  margin: 10px;
+  margin-left: 42%;
+  font-size: 25px;
+  width: 125px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  height: 100%;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 20px;
+}
+
+.question-sec {
+  display: none;
+  align-items: center;
+  margin: 0 0 50px auto;
+  min-height: 70vh;
+  padding: 0 10px;
+  justify-content: center;
+  width: 50vw;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  height: 120%;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 20px;
+}
+
+.question-header {
+  text-align: center;
+  font-size: 36px;
+  padding-bottom: 25px;
+}
+
+.answers-list {
+  padding-bottom: 20px;
+}
+
+.answers-list p {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.results-sec {
+  display: none;
+  align-items: center;
+  margin: 0 0 50px auto;
+  min-height: 70vh;
+  padding: 0 10px;
+  justify-content: center;
+  width: 50vw;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  height: 100%;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 20px;
+}
+
+.results-header {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+.results-list {
+  padding-bottom: 35px;
+}
+
+.results-list p {
+  font-size: 20px;
+}
+
+.results-list h3 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.btn-endquiz {
+  text-align: center;
+  float: right;
+  width: 150px;
+}
+
+input[type="radio"] {
+  accent-color: #e05c09;
+  margin: 8px;
+}

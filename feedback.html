@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/query-form.css" />
+    <script src="js/queryForm.js" async></script>
+    <script src="js/global-script.js" async></script>
+    <link rel="icon" href="src/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--/*!
+          * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+          * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+        */-->
+    <title>Reach Us</title>
+  </head>
+  <body>
+    <section class="page-editor flex flex-center">
+      <div class="editor-exit">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="page-editor-wrapper">
+        <div class="page-editor-image flex flex-center">
+          <img src="src/devmal.png" alt="page editor img" />
+        </div>
+        <div class="page-editor-name">
+          <h1>Devmal</h1>
+        </div>
+        <div class="page-editor-description">
+          <div class="student-details">
+            <p>IIT ID: 20210220</p>
+            <p>UOW ID: W1912859</p>
+            <p>Student-2</p>
+          </div>
+          <p>List of tasks completed</p>
+          <hr />
+          <p>Task-2a</p>
+          <p>Task-2b</p>
+          <p>Task-3</p>
+          <p>Task-9a</p>
+          <p>Tasks-9b to 15</p>
+        </div>
+      </div>
+    </section>
+    <!-- BACK TO TOP BTN -->
+    <button class="btn back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- NAVIGATION SECTION -->
+    <header class="nav-bar">
+      <nav class="flex">
+        <img id="logo" src="src/Logo.png" alt="Main Logo" />
+        <ul>
+          <!-- All nav links not yet working cause other member files not available in individual submission -->
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Products</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a class="active" href="feedback.html">Reach us</a></li>
+          <li><a href="thumbnail.html">Hall of fame</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- CUSTOMER QUERY FORM -->
+    <section class="form">
+      <div class="container-form">
+        <form
+          name="query-form"
+          id="query-form"
+          method="POST"
+          action="mailto:devmalwije1@gmail.com"
+          enctype="multipart/form-data"
+        >
+          <h1>Your Feedback</h1>
+          <div class="user">
+            <input id="Name" name="name" type="text" placeholder="Full Name" />
+            <i class="far fa-user"></i>
+          </div>
+          <div class="user">
+            <input id="Email" type="text" placeholder="User E-mail" />
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="user">
+            <select name="Subject" id="querySubject">
+              <option value="SubjectofQuery">Select query subject</option>
+              <option value="Memberships, subscriptions or communications">
+                Memberships, subscriptions or communications
+              </option>
+              <option value="Payment, charges or gift cards">
+                Payment, charges or gift cards
+              </option>
+              <option value="A delivery, order or return">
+                A delivery, order or return
+              </option>
+              <option value="Something else">Something else</option>
+            </select>
+            <i class="far fa-question-circle"></i>
+          </div>
+          <div class="user">
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="15"
+              rows="5"
+              placeholder="Enter your query"
+            ></textarea>
+            <input
+              type="button"
+              id="checkbtn"
+              form="query-form"
+              class="btn btn-check"
+              value="Review submission"
+            />
+          </div>
+          <!-- CUSTOMER QUERY CHECK AND SUBMISSION POPUP -->
+          <div class="popup-container">
+            <div class="popup" id="popup">
+              <img src="src/favicon.png" alt="" />
+              <h2>Your query is as follows</h2>
+              <p id="popname"></p>
+              <p id="popemail"></p>
+              <p id="popsubject"></p>
+              <p id="popquery"></p>
+              <button class="btn" type="button" onclick="EditPopup()">
+                Edit
+              </button>
+              <button
+                class="btn"
+                type="button"
+                onclick=" sendmail(); closePopup()"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <img class="logo" src="src/Logo.png" alt="site logo" />
+          </div>
+          <div class="Link-lists">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="Link-lists">
+            <h4>More Links</h4>
+            <ul>
+              <li><a href="sitemap.html">Site map</a></li>
+              <li><a href="feedback.html">Reach us</a></li>
+              <li><a href="additional-page.html">IntotheHoop 2022</a></li>
+            </ul>
+          </div>
+          <div class="Link-lists">
+            <h4>Meet the crew</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright DRIBBLERZ 2022, All Rights Reserved.</p>
+        <p class="view-page-editor">
+          <a class="view-editor">View Page Editor</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

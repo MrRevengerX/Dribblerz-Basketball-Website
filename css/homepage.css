@@ -1,0 +1,357 @@
+.highlighted {
+  color: var(--orange);
+  text-shadow: 3px 2px 5px white;
+}
+
+/*------HERO SECTION------*/
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  padding: 0 10px;
+}
+
+.hero-content {
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 40rem;
+  width: 50%;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  height: 100%;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 20px;
+}
+.hero-content h2 {
+  text-align: center;
+  font-size: 75px;
+  padding-bottom: 25px;
+  text-shadow: 3px 2px 5px var(--orange);
+}
+.hero-content p {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.hero-animation svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-animation {
+  flex: 1 1 20rem;
+}
+
+#ball {
+  animation: ball-bounce 0.5s infinite alternate ease-in;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+@keyframes ball-bounce {
+  from {
+    transform: translateY(-49%) rotate(0deg);
+  }
+  to {
+    transform: translateY(233%) rotate(720deg);
+  }
+}
+
+#hand {
+  animation: arm-swing 0.5s infinite alternate ease-in-out;
+  transform-origin: 90% 10%;
+  transform-box: fill-box;
+}
+
+@keyframes arm-swing {
+  from {
+    transform: rotateZ(20deg);
+  }
+  to {
+    transform: rotateZ(-10deg);
+  }
+}
+
+.btn-main {
+  padding: 20px 30px;
+  font-size: 18px;
+  border: 2px solid var(--orange);
+}
+
+.btn-main:hover {
+  background-color: transparent;
+  box-shadow: inset 0px 0px 10px var(--orange), 0px 0px 10px var(--orange);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.fa-globe {
+  padding-right: 10px;
+}
+
+/* -----------BENEFITS SECTION --------------- */
+
+.benefits {
+  min-height: 90vh;
+}
+
+.benefits h2 {
+  font-size: 60px;
+  padding-bottom: 25px;
+  text-shadow: 3px 2px 5px var(--orange);
+}
+
+.benifit-card-wrapper {
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.benifit-card-wrapper .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 265px;
+  height: 250px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.benifit-card-wrapper .card:hover {
+  border: 1px var(--orange) solid;
+}
+.benifit-card-wrapper .card .icon {
+  font-size: 90px;
+  position: relative;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.benifit-card-wrapper .card:hover .icon {
+  font-size: 70px;
+  transform: translateY(0px);
+  color: var(--orange);
+}
+
+.benifit-card-wrapper .card .card-name {
+  padding: 20px 0 10px 0;
+  position: relative;
+  font-size: 27px;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+
+.benifit-card-wrapper .card:hover .card-name {
+  transform: translateY(0px);
+}
+
+.benifit-card-wrapper .card .card-description {
+  padding: 10px 0;
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.6s ease;
+  width: 200px;
+}
+
+.benifit-card-wrapper .card:hover .card-description {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*------SHOP SECTION------*/
+.products {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+  min-height: 80vh;
+  padding: 0 10px;
+}
+
+.products-content {
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 40rem;
+  width: 50%;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  height: 100%;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 20px;
+}
+.products-content h2 {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 25px;
+  text-shadow: 3px 2px 5px var(--orange);
+}
+.products-content p {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.product-samples {
+  flex: 1 1 20rem;
+}
+
+.fa-shopping-bag {
+  padding-right: 10px;
+}
+
+.product-animation {
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+.product-samples img {
+  width: 150px;
+  border-radius: 15px;
+}
+
+.product-img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.test {
+  margin: 100px;
+}
+.product1 {
+  z-index: 4;
+  left: -80px;
+  top: 80px;
+  transition: all ease 0.4s;
+}
+.product2 {
+  z-index: 3;
+  left: -40px;
+  top: 40px;
+  transition: all ease 0.4s;
+}
+.product3 {
+  z-index: 2;
+  left: 0px;
+  top: 0px;
+  transition: all ease 0.4s;
+}
+.product4 {
+  z-index: 1;
+  left: 40px;
+  top: -40px;
+  transition: all ease 0.4s;
+}
+
+.product1-animated {
+  padding: 15px;
+  left: -100px;
+  top: 90px;
+}
+.product2-animated {
+  padding: 15px;
+  left: 75px;
+  top: 90px;
+}
+.product3-animated {
+  padding: 15px;
+  left: -100px;
+  top: -80px;
+}
+.product4-animated {
+  padding: 15px;
+  left: 75px;
+  top: -80px;
+}
+
+.fa-shopping-bag {
+  padding-right: 10px;
+}
+
+.quiz {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+.quiz-content {
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 40rem;
+  width: 50%;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px gray solid;
+  height: 100%;
+  box-shadow: 0 8px 32px 0 var(--black);
+  border-radius: 20px;
+}
+.quiz-content h2 {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 25px;
+  text-shadow: 3px 2px 5px var(--orange);
+}
+.quiz-content p {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.fa-graduation-cap {
+  padding-right: 10px;
+}
+
+.quiz-animation svg {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-animation {
+  flex: 1 1 20rem;
+}
+
+#head {
+  animation: head-swing 3s infinite alternate ease-in-out;
+  transform-origin: 50% 100%;
+  transform-box: fill-box;
+}
+@keyframes head-swing {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
+}
+
+#question-mark {
+  animation: quiz-swing 3s infinite alternate ease-in-out;
+  transform-origin: 50% 100%;
+  transform-box: fill-box;
+}
+
+@keyframes quiz-swing {
+  from {
+    transform: rotateZ(-10deg);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
+}
+
+/* ---Page editor panel--- */
+
+.page-editor {
+  width: 98.7vw;
+  left: -2000px;
+}

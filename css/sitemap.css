@@ -1,0 +1,17 @@
+.sitemap {
+  font-size: 20px;
+  padding-top: 50px;
+  margin-left: -95px;
+}
+rect {
+  fill: var(--orange);
+  border: solid 2px var(--orange);
+}
+rect:hover {
+  fill: #000;
+  border: solid 2px var(--orange);
+}
+
+section {
+  height: 60vh;
+}

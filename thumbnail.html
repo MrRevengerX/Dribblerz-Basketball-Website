@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global-styles.css" />
+    <link rel="stylesheet" href="css/thumbnail.css" />
+    <link rel="icon" href="src/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--/*!
+          * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+          * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+        */-->
+    <title>Hall Of Fame</title>
+  </head>
+  <body>
+    <!-- PAGE EDITOR SECTION -->
+    <section class="page-editor flex flex-center">
+      <div class="editor-exit"><i class="fas fa-times"></i></div>
+      <div class="page-editor-wrapper">
+        <div class="page-editor-image flex flex-center">
+          <img src="src/ravihara.jpeg" alt="page editor img" />
+        </div>
+        <div class="page-editor-name">
+          <h1>Ravihara</h1>
+        </div>
+        <div class="page-editor-description">
+          <div class="student-details">
+            <p>IIT ID: 20211620</p>
+            <p>UOW ID: w1913374</p>
+            <p>Student-4</p>
+          </div>
+          <p>List of tasks completed</p>
+          <p>Task-2a</p>
+          <p>Task-5</p>
+          <p>Task-7</p>
+          <p>Tasks-9b to 15</p>
+          <br />
+        </div>
+      </div>
+    </section>
+    <!-- BACK TO TOP BUTTON -->
+    <button class="btn back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!--NAVIGATION SECTION-->
+    <header class="nav-bar">
+      <nav class="flex">
+        <img id="logo" src="src/Logo.png" alt="Main Logo" />
+        <ul>
+          <!-- All nav links not yet working cause other member files not available in individual submission -->
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Products</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="feedback.html">Reach us</a></li>
+          <li><a class="active" href="thumbnail.html">Hall of fame</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--thumbnail images-->
+    <section class="flex flex-column flex-center">
+      <h1>Top Rank Players</h1>
+
+      <div class="players_thumbnail flex flex-center">
+        <div class="player">
+          <img src="src/players/stephcurry.jpg" alt="steph" />
+          <h3>STEPH CURRY</h3>
+        </div>
+
+        <div class="player">
+          <img src="src/players/damianlillard.jpg" alt="damian" />
+          <h3>DAMIAN LILARD</h3>
+        </div>
+
+        <div class="player">
+          <img src="src/players/lebronjames.jpg" alt="james" />
+          <h3>LEBRON JAMES</h3>
+        </div>
+
+        <div class="player">
+          <img src="src/players/kevindurant.jpg" alt="kevin" />
+          <h3>KEVIN DURANT</h3>
+        </div>
+
+        <div class="player">
+          <img src="src/players/kyrieirving.jpg" alt="kyrie" />
+          <h3>KYRIE IRVING</h3>
+        </div>
+      </div>
+      <!--background color change dropdown menu-->
+      <div class="custom-select flex flex-center">
+        <div class="selectBox1">
+          <h5 id="sC">Select Background Color:</h5>
+          <select id="bgColor" onchange="color(this.value)">
+            <option value="">Please Select</option>
+            <option value="#F1C40F">Dark Yellow</option>
+            <option value="#00bcd4">Iris Blue</option>
+            <option value="#34495e">Dark Blue</option>
+            <option value="#DE3163">Red</option>
+            <option value="#1ABC9C">Strong cyan</option>
+            <option value="#6495ED">Blue</option>
+          </select>
+        </div>
+        <!--Font color change dropdown menu-->
+        <div class="selectBox2">
+          <h5>Select Font Color</h5>
+          <select
+            id="input-font"
+            class="input"
+            onchange="changeFontColor(this.value)"
+          >
+            <option value="">Please Select</option>
+            <option class="opt" value="black">Black</option>
+            <option class="opt" value="red">Red</option>
+            <option class="opt" value="gray">Gray</option>
+            <option class="opt" value="blue">Blue</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="Details-section flex" id="Details-section">
+        <img class="playerImage" src="src/players/stephcurry.jpg" alt="steph" />
+
+        <div class="para1 flex flex-column" id="para1">
+          <h4 class="playerName">STEPH CURRY</h4>
+
+          <p class="playerDescription">
+            Wardell Stephen Curry is an American professional basketball player
+            for the Golden State Warriors of the National Basketball Association
+            (NBA). Widely regarded as one of the greatest basketball players of
+            all time, and as the greatest shooter in NBA history, Curry is
+            credited with revolutionizing the sport by inspiring teams and
+            players to more frequently utilize the three-point shot. An
+            eight-time NBA All-Star and eight-time All-NBA selection, including
+            four times on the first team, he has been named the NBA Most
+            Valuable Player (MVP) twice, has won four NBA championships, an NBA
+            Finals MVP Award, and an NBA All-Star Game MVP Award.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="js/thumbnail.js"></script>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <img class="logo" src="src/Logo.png" alt="site logo" />
+          </div>
+          <div class="Link-lists">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="Link-lists">
+            <h4>More Links</h4>
+            <ul>
+              <li><a href="sitemap.html">Site map</a></li>
+              <li><a href="feedback.html">Reach us</a></li>
+              <li><a href="additional-page.html">IntotheHoop 2022</a></li>
+            </ul>
+          </div>
+          <div class="Link-lists">
+            <h4>Meet the crew</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright DRIBBLERZ 2022, All Rights Reserved.</p>
+        <p class="view-page-editor">
+          <a class="view-editor">View Page Editor</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/global-script.js"></script>
+  </body>
+</html>

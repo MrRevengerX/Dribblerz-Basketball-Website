@@ -1,0 +1,343 @@
+/* Creating main colour theme for the site */
+:root {
+  --orange: #e05c09;
+  --black: #19191a;
+  --grey: #282c2c;
+}
+
+/* Removing all default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Adding colour white to every element */
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Adding custom font to every element */
+html,
+body,
+form,
+fieldset,
+table,
+tr,
+td,
+img {
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Changing text selection colour */
+::-moz-selection {
+  background: var(--orange);
+}
+
+::selection {
+  background: var(--orange);
+}
+
+input,
+button,
+select,
+textarea,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.active:hover {
+  color: white;
+  box-shadow: 0px 0px 7px var(--orange);
+  transition: 0.4s;
+}
+
+h1 {
+  font-size: 65px;
+  text-shadow: 3px 2px 5px var(--orange);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  border: 1px solid var(--orange);
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+}
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid var(--orange);
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px var(--grey) inset;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: var(--black);
+  border: solid 1px var(--orange);
+  outline: none;
+  color: white;
+  transition: 0.4s;
+}
+
+input:focus {
+  background-color: var(--grey);
+  border: solid 1px var(--orange);
+}
+
+/* Creating re-usable style classes to increase code efficiency */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--orange);
+  color: white;
+  border: 2px solid var(--orange);
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background-color: transparent;
+  box-shadow: inset 0px 0px 5px var(--orange), 0px 0px 5px var(--orange);
+  cursor: pointer;
+}
+
+hr {
+  padding-bottom: 0.5px;
+  margin-bottom: 3px;
+  background-color: var(--orange);
+  border: none;
+}
+
+section {
+  background: url(../src/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*---NAVIGATION STYLES---*/
+header {
+  position: sticky;
+  top: 0px;
+  justify-content: flex-end;
+  width: 98.7vw;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 var(--black);
+  background: rgba(0, 0, 0, 0.476);
+}
+
+nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  max-width: 200px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+nav ul {
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 23px;
+  border-radius: 30px;
+  border: 2px transparent solid;
+  transition: all 0.4s ease;
+}
+
+nav a:hover {
+  border: 2px solid var(--orange);
+}
+
+.active {
+  color: white;
+  background-color: var(--orange);
+  border-radius: 30px;
+}
+
+/*---Back to top button styling---*/
+.back-to-top {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  padding: 10px 10px;
+  bottom: 50px;
+  right: -100px;
+  font-size: 25px;
+  z-index: 20;
+  transition: all 0.4s ease;
+}
+
+.show-btt {
+  bottom: 50px;
+  right: 50px;
+}
+
+.back-to-top:hover {
+  background-color: var(--grey);
+}
+
+/*---FOOTER SECTION---*/
+.row {
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  padding: 20px 20px;
+}
+.Link-lists {
+  width: 25%;
+  padding: 0 15px;
+}
+.Link-lists h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 23px;
+  font-weight: 500;
+  position: relative;
+}
+.Link-lists h4::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  background-color: var(--orange);
+  height: 2px;
+  box-sizing: border-box;
+  width: 60px;
+}
+.Link-lists ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.Link-lists ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+.Link-lists ul li a:hover {
+  color: var(--orange);
+  padding-left: 8px;
+}
+.footer .logo {
+  padding-top: 40px;
+  padding-right: 30px;
+  max-width: 400px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* ---Page editor section--- */
+.page-editor {
+  z-index: 100;
+  position: fixed;
+  height: 100vh;
+  width: 30vw;
+  background: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 var(--black);
+  background: rgba(0, 0, 0, 0.476);
+  left: -1200px;
+  transition: 1s ease;
+  opacity: 0;
+}
+.page-editor-image {
+  padding-bottom: 20px;
+}
+.page-editor-image img {
+  width: 175px;
+  background-color: rgb(157, 50, 52);
+  border-radius: 50%;
+}
+.page-editor-name h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.page-editor-description p {
+  font-size: 17px;
+  text-align: center;
+}
+.page-editor-wrapper {
+  width: 50%;
+}
+
+.student-details {
+  padding-bottom: 10px;
+}
+
+.editor-exit {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.view-page-editor {
+  padding-top: 4px;
+}
+.view-page-editor a {
+  text-decoration: none;
+  color: var(--orange);
+  cursor: pointer;
+}
+.view-page-editor a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
