@@ -3,8 +3,8 @@
  ## Interactive website created using HTML, CSS and vanilla javascript.
  
  ### This projects was created as a coursework activity in first academic year at IIT.
- #### Courswork specifications : [Click Here](shorturl.at/aLXZ9 "Courswork specifications")
- #### Courswork report : [Click Here](shorturl.at/afJNY "Courswork specifications")
+ #### Courswork specifications : [Click Here](https://drive.google.com/file/d/1w4F6Z5m6-H8vjNIQXkVYK25sVOZqRmih/view?usp=share_link "Courswork specifications")
+ #### Courswork report : [Click Here](https://drive.google.com/file/d/1i_tMU4-36RC_rdi8diqOWjcOGd3_87aK/view?usp=share_link "Courswork specifications")
 
 
 -----------------------------------------------------------------------------------------------
